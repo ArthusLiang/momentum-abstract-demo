@@ -1,0 +1,48 @@
+{
+	"device-wake": {
+		"wake-full": "wake-full.mp3"
+	},
+	"legacy-notifications": {
+		"beep": "beep.mp3",
+		"calculation-message": "calculation-message.mp3",
+		"evolve-message": "evolve-message.mp3",
+		"vibes-message": "vibes-message.mp3"
+	},
+	"legacy-ringtones": {
+		"ascent": "ascent.mp3",
+		"calculation": "calculation.mp3",
+		"delight": "delight.mp3",
+		"evolve": "evolve.mp3",
+		"mellow": "mellow.mp3",
+		"mischief": "mischief.mp3",
+		"playful": "playful.mp3",
+		"reflections": "reflections.mp3",
+		"ringer": "ringer.mp3",
+		"ripples": "ripples.mp3",
+		"sunrise": "sunrise.mp3",
+		"vibes": "vibes.mp3"
+	},
+	"logo": {
+		"full": "full.mp3"
+	},
+	"meetings": {
+		"start-full": "start-full.mp3"
+	},
+	"notifications": {
+		"air": "air.mp3",
+		"bounce": "bounce.mp3",
+		"cute": "cute.mp3",
+		"drop": "drop.mp3",
+		"idea": "idea.mp3",
+		"nimba": "nimba.mp3",
+		"open": "open.mp3",
+		"rise": "rise.mp3",
+		"scatter": "scatter.mp3",
+		"snap": "snap.mp3",
+		"tick": "tick.mp3"
+	},
+	"ringtones": {
+		"incoming-full": "incoming-full.mp3",
+		"outgoing-full": "outgoing-full.mp3"
+	}
+}
