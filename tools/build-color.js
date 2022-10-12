@@ -2,7 +2,7 @@ const { MomentumAbstractType, mfs, mconvert } = require('momentum-constructor-co
 const write = require('write');
 const path = require('path');
 
-const path_output = path.resolve(__dirname, '../src/scss');
+const path_output = path.resolve(__dirname, '../src/color');
 
 const rgbaStr = (rgba)=> {
     return `rgba(${rgba.r},${rgba.g},${rgba.b},${rgba.a})`
@@ -40,6 +40,21 @@ const buildColor = async ()=> {
     Object.values(files).forEach((file)=>{
         generateScss(file);
     });
+
+    // save renamed files
+    // rename token
+    files = mconvert.renameToken(files, {
+        pattern: /\-/,
+        words: '@'
+    });
+    
+    // rename file
+    files = mconvert.renameFile(files, {
+        pattern: /core/g,
+        words: 'main'
+    });
+    mfs.saveFiles(files, path.join(path_output, 'rename'));
+
 };
 
 exports.buildColor = buildColor;
